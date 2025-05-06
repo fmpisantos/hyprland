@@ -10,7 +10,7 @@ fi
 while true; do
   read -r X Y < <(hyprctl cursorpos)
 
-  if [ "$Y" -lt 5 ]; then
+  if [ "$Y" -lt 25 ]; then
     if [ "$bar_visible" = false ]; then
       pkill waybar 2>/dev/null
       waybar &
